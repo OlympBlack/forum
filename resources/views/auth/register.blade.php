@@ -32,7 +32,11 @@ https://www.tooplate.com/view/2127-little-fashion
 -->
 <style>
     body{
-        background-color: rgb(26, 105, 209);
+       // background-color: white;
+        background-image: url('images/login/b1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
     }
 </style>
     </head>
@@ -53,7 +57,7 @@ https://www.tooplate.com/view/2127-little-fashion
 
                         <div class="col-lg-8 mx-auto col-12">
 
-                            <h3 class="hero-title text-center mb-5">Créer votre compte</h3>
+                            <h3 class="hero-title text-center text-light mb-5">Créer votre compte</h3>
 
                             <div class="social-login d-flex flex-column w-50 m-auto" >
                                 
@@ -62,13 +66,13 @@ https://www.tooplate.com/view/2127-little-fashion
 
                                     Continue with Google
                                 </a>
-
+                                
                                 <a href="#" class="btn custom-btn social-btn bg-info">
                                     <i class="bi bi-facebook me-3"></i>
 
                                     Continue with Facebook
                                 </a>
-                            </div>
+                            </div>  
 
                             <div class="div-separator w-50 m-auto my-5"><span>OU</span></div>
 
@@ -79,7 +83,7 @@ https://www.tooplate.com/view/2127-little-fashion
                                         <label for="" style="color: white;">Nom et prénom</label>
                                         <div class="form-floating">
                                             
-                                            <input type="text" name="name" id="name"  class="form-control border-dark" placeholder="Nom et prénom" required>
+                                            <input type="text" name="name" id="name"  class="form-control" placeholder="Nom et prénom" required style="border: 1px solid #FF4400;>
 
                                             <label for="name">Nom et prenom</label>
                                             @error('name')
@@ -89,7 +93,7 @@ https://www.tooplate.com/view/2127-little-fashion
 
                                         <label for="" style="color: white;">Adresse mail</label>
                                         <div class="form-floating">
-                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control border-dark" placeholder="Email address" required>
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required style="border: 1px solid #FF4400;>
 
                                             <label for="email">Addresse mail</label>
                                             @error('email')
@@ -99,7 +103,7 @@ https://www.tooplate.com/view/2127-little-fashion
 
                                         <label for="" style="color: white;">Mot de passe</label>
                                         <div class="form-floating">
-                                            <input type="password" name="password" id="password"  class="form-control border-dark" placeholder="Password" required>
+                                            <input type="password" name="password" id="password"  class="form-control" placeholder="Password" required style="border: 1px solid #FF4400;>
 
                                             <label for="password">Mot de passe</label>
                                             @error('password')
@@ -110,16 +114,16 @@ https://www.tooplate.com/view/2127-little-fashion
 
                                         <label for="" style="color: white;">Confirmer le mot de passe</label>
                                         <div class="form-floating">
-                                            <input type="password" name="password_confirmation" id="confirm_password" class="form-control border-dark" placeholder="Password" required>
+                                            <input type="password" name="password_confirmation" id="confirm_password" class="form-control" placeholder="Password" required style="border: 1px solid #FF4400;>
 
                                             <label for="confirm_password">Confirmer le mot de passe</label>
                                         </div>
 
-                                        <button type="submit" class="btn custom-btn form-control mt-4 mb-3">
+                                        <button type="submit" class="btn custom-btn form-control mt-4 mb-3" style="background-color: #FF4400;">
                                             Créer le compte
                                         </button>
 
-                                        <p class="text-center" style="color: white;">Avez-vous déjà un compte ?  <a href="{{route('login')}}" style="color: white;">Connectez-vous</a></p>
+                                        <p class="text-center" style="color: white;">Avez-vous déjà un compte ?  <a href="{{route('login')}}" style="color: #FF4400;">Connectez-vous</a></p>
 
                                     </form>
                                 </div>

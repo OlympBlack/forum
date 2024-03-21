@@ -20,14 +20,16 @@
     }
   </style>
  
-    <section class="team section-padding">
+    <div class="team section-padding">
         <div class="container mt-3">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <h4 class="mb-5">Des <span>Publications</span></h4>
                 </div>
+                
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="dropdown ">
+
+                   <div class="dropdown ">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                        Créer votre publication
                         </button>
@@ -45,6 +47,34 @@
                             <button type="submit" class="btn btn-primary">Ajouter</button>
                         </form>
                     </div>
+
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Créer une publication</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Créer ici votre publication</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" action="{{ route('publication.store') }}>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Titre:</label>
+                                    <input type="text" name="titre" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" name="description" id="message-text"></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    <button type="submit" class="btn btn-primary">Créer</button>
+                                </div>
+                            </form>
+                        </div>                    
+                        </div>
+                    </div>
+                    </div>-->
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-6">
                     <div class=" bg-body-tertiary">
@@ -113,7 +143,7 @@
                
      
                    
-        </section>
+        </div>
 
         
 </main>
@@ -136,4 +166,6 @@
     }
   });
 </script>
+
+
 @include('layouts/footer')

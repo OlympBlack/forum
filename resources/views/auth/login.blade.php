@@ -23,17 +23,13 @@
 
         <link href="css/tooplate-little-fashion.css" rel="stylesheet">
         
-<!--
 
-Tooplate 2127 Little Fashion
-
-https://www.tooplate.com/view/2127-little-fashion
-
--->
 <style>
     body{
-        background-color: rgb(26, 105, 209);
-        /*background-image: url('images/IFRI/image1.jpg')*/
+       // background-color: white;
+        background-image: url('images/login/b1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         
     }
 </style>
@@ -47,12 +43,12 @@ https://www.tooplate.com/view/2127-little-fashion
         <main>
 
             <section class="sign-in-form section-padding y">
-                <div class="container">
+                <div class="container  ">
                     <div class="row">
 
                         <div class="col-lg-8 mx-auto col-12">
 
-                            <h3 class="hero-title text-center mb-5">Connectez-vous</h3>
+                            <h3 class="hero-title text-center mb-5" style="color: white;">Connectez-vous</h3>
 
                             <div class="row">
                                 <div class="col-lg-8 col-11 mx-auto">
@@ -60,16 +56,16 @@ https://www.tooplate.com/view/2127-little-fashion
                                         @csrf
                                         <label for="" style="color: white;">Adresse mail</label>
                                         <div class="form-floating mb-4 p-0">
-                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control border-dark" placeholder="Email address" required>
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="" required style="border: 1px solid #FF4400;>
 
-                                            <label for="email">Adresse mail</label>
+                                            <label for="email" >Adresse mail</label>
                                             @error('email')
                                             <div class="text-danger">{{$message}}</div>
                                             @enderror
                                         </div>
                                         <label for="" style="color: white;">Mot de passe</label>
                                         <div class="form-floating p-0">
-                                            <input type="password" name="password" id="password" class="form-control border-dark" placeholder="Password" required>
+                                            <input type="password" name="password" id="password" class="form-control " placeholder="" required style="border: 1px solid #FF4400;>
 
                                             <label for="password">Password</label>
                                             @error('password')
@@ -77,11 +73,11 @@ https://www.tooplate.com/view/2127-little-fashion
                                             @enderror
                                         </div>
 
-                                        <button type="submit" class="btn custom-btn form-control mt-4 mb-3">
+                                        <button type="submit" class="btn custom-btn form-control mt-4 mb-3" style="background-color: #FF4400;">
                                             Connecter
                                         </button>
 
-                                        <p class="text-center text-light">N'avez-vous pas de compte ? <a href="{{route('register')}}" style="color: white;">Créer un compte</a></p>
+                                        <p class="text-center text-light">N'avez-vous pas de compte ? <a href="{{route('register')}}" style="color: #FF4400;">Créer un compte</a></p>
 
                                     </form>
                                 </div>
